@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(203,203,255);
+}
+
+h1{
+    text-align: center;
+    /*background-color: rgb(67,67,194);*/
+}
+
+.textIzquierdo{
+    text-align: left;
+    display: flex;
+    float: left;
+    width: 100%;
+}
+
+.textDerecho{
+    text-align: right;
+    display: flex;
+    float: left;
+    width: 100%;
+}
+
+.contenedorTexto{
+    display: flex;
+    float: left;
+    max-width: 100%;
+}
+
+.justificacion{
+    text-align: center;
+}
+
+.contenedor{
+    width: 100%;
+    display: flex;
+    float: left;
+}
+
+.fontLato{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+.fontAboreto{
+    font-family: 'Aboreto', cursive;
+    font-weight: bold;
+}
+
+.fontSofia{
+    font-family: 'Sofia', cursive;
+}
+
+.fontNabla{
+    font-family: 'Nabla', cursive;
+    background-color: rgb(39,39,201);
+}

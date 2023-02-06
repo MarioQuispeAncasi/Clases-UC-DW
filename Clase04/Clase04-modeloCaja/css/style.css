@@ -1,0 +1,71 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
+p{
+    text-align: justify;
+    margin: 0px;
+}
+
+.textoCentrado{
+    text-align: center;
+    background-color: violet;
+}
+
+.textoJustificado{
+    text-align: justify;
+}
+
+.bordeSimpleNegro{
+    border-style: solid;
+    border-color: rgb(1, 1, 156);
+    border-top: 10px;
+    border-right: 10px;
+    border-bottom: 10px;
+    border-left: 10px;
+    border: 10px solid blue;
+}
+
+.relleno{
+    padding: 20px;
+}
+.contenido{
+    background-color: blueviolet;
+}
+.borde{
+    border: 5px dotted red;
+}
+.sinMargen{
+    margin: 0px;
+}
+.perimetro{
+    border: 5px solid green;
+}
+.rellenoPadre{
+    padding: 50px;
+}
+.rellenoHijo{
+    padding: 15px;
+}
+.bordeAmarillo{
+    border: 7px double yellowgreen;
+}
+.margenMayor{
+    margin-bottom:10px;
+}
+.margenMenor{
+    margin-top: 50px;
+}
+.fila{
+    display: flex;
+    float: left;
+}
+.margenMayorLinea{
+    margin-right: 100px;
+}
+.margenMenorLinea{
+    margin-left: 200px;
+}
+
+.rellenoDiseno{
+    padding: 10px;
+}

@@ -1,0 +1,87 @@
+body{
+    background-color: rgb(140, 140, 241);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    text-align: justify;
+}
+
+hr{
+    margin: 0px;
+}
+
+.header{
+    text-align: center;
+    text-transform: uppercase;
+    border: 4px solid red;
+    background-color: antiquewhite;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.headerLink{
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.itemNav{
+    display: flex;
+    float: left;
+    width: 33%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(57,57,37);
+}
+
+.navLink{
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    width: 100%;;
+}
+
+.secMain{
+    color: rgb(0, 0, 97);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgb(199, 255, 236);
+}
+
+.secSec{
+    display: flex;
+    float: left;
+    width: 50%;
+}
+
+.textSec1{
+    padding: 30px;
+    margin: 0px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+
+.textSec2{
+    padding: 30px;
+    margin: 0px;
+    background-color: violet;
+    color: white;
+    font-weight: bold;
+}
+.footer{
+    text-align: center;
+    font-style: italic;
+    color: white;
+    background-color: black;
+    padding: 30px;
+}

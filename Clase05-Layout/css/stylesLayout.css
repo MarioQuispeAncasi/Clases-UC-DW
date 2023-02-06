@@ -1,0 +1,90 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    text-align: justify;
+    margin: 0px;
+    font-size: 16px;
+}
+h2{
+    padding: 30px;
+    text-decoration: underline;
+}
+.header{
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(81, 255, 168);
+    border-bottom: 4px solid black;
+}
+
+.headerLink{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.headerLink:hover{
+    color: white;
+}
+
+.itemNav{
+    display: flex;
+    float: left;
+    width: 33.33%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: rgb(0, 53, 16);
+    text-decoration: none;
+    border-color: 4px solid black;
+}
+
+.menuNav{
+    color: white;
+    font-size: 30px;
+    width: 100%;
+}
+.menuNav:hover{
+    color: yellow;
+}
+
+.itemNav:hover{
+    color: yellow;
+    background-color: rgb(1, 65, 20);
+}
+
+.secMain{
+    padding:20px;
+    background-color: rgba(0, 150, 85, 0.783);
+    border-bottom: 4px solid black;
+}
+.padTop{
+    padding-top: 60px;
+}
+.secSec1{
+    display: flex;
+    float: left;
+    width: 50%;
+    color: rgb(0, 0, 126);
+    background-color: rgba(255, 255, 0, 0.381);
+}
+
+.secSec2{
+    display: flex;
+    float: left;
+    width: 50%;
+    color: rgb(52, 0, 101);
+    background-color: rgba(180, 22, 22, 0.372);
+}
+
+.padGen{
+    padding: 50px;
+}
+
+.footer{
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(90, 77, 11);
+    color: white;
+}

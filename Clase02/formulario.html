@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Formulario Html</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <h1>Primer Visatzao Javascript</h1>
+    <input type="button" value="Guardar">
+    <br>
+    <button onclick="alert('Hola Mundo')">Guardar</button>
+    <button onclick="document.getElementById('zonaSaludo').innerHTML='Hola Mundo'">Completar</button>
+    <p id="zonaSaludo">aaa</p>
+
+    <h1>Formulario</h1>
+    <form action="#" method="POST">
+        <label for="" title="Usuario">Usuario</label>
+        <input type="text"
+        placeholder="Ingrese su usuario" required>
+        <br>
+
+        <label for="" title="Usuario"
+        >Password</label>
+        <input type="password" title="Password" 
+        placeholder="Ingrese su contraseña"
+        required>
+        <br>
+        <button type="submit">Enviar</button>   
+    </form>
+
+    <h1>Input texto</h1>
+    <label for="">Nombre</label><br>
+    <input type="text" 
+    placeholder="Ingrese sus nombres"
+    id="txtNombre">
+    <button 
+    onclick="alert(document.getElementById('txtNombre').value)">Enviar</button>
+
+    <h1>Input Numerico</h1>
+    <label for="">Celular</label><br>
+    <input type="number" 
+    placeholder="Ingrese su nro de celular"
+    id="txtCelular">
+    <button 
+    onclick="alert(document.getElementById('txtCelular').value)">Enviar</button>
+
+    <h1>Input opciones</h1>
+    <label for="">Tipo de documento</label>
+    <input type="radio" name="tipo" value="DNI">
+    <input type="radio" name="tipo" value="RUC">
+    <input type="radio" name="tipo" value="Otros"><br>
+    <button 
+    onclick="alert(document.getElementsByName('tipo').value)">Enviar</button>
+
+    <h1>Input check</h1>
+    <label for="">Comida Preferida</label> <br>
+    <input type="checkbox" name="comida" id="chkPollo">Pollo <br>
+    <input type="checkbox" name="comida" id="chkCeviche">Ceviche <br>
+    <input type="checkbox" name="comida" id="chkChaufa">Chaufa <br>
+    <button 
+    onclick="alert(document.getElementsByName('comida').value)">Enviar</button>
+
+    <br><br><br>
+
+    <h1>Seleccion</h1>
+    <label for="">Elige una opcion:</label><br>
+    <select name="" id="opcionE">
+        <option value="1">Maquetacion HTML</option>
+        <option value="2">CSS</option>
+        <option value="3">Javascript</option>
+        <option value="4">PHP</option>
+    </select>
+    <button 
+    onclick="alert(document.getElementById('opcionE').value)">Enviar</button>
+
+    <br><br><br>
+
+    <h1>Area de Texto</h1>
+    <input type="text"
+    placeholder="Texto">
+    <textarea name="" id="" cols="60" rows="3"></textarea>
+
+    <br><br><br>
+    <hr>
+
+    <input type="color" name="" id="">
+    <input type="date">
+    <input type="time">
+    <input type="week">
+
+    <input type="button" value="Guardar">
+
+
+
+
+</body>
+</html>

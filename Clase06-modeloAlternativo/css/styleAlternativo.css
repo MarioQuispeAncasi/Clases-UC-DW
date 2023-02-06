@@ -1,0 +1,34 @@
+*{
+    font-family: 'Fira Sans', sans-serif;
+}
+h1{
+    text-align: center;
+}
+.clasico{
+    width: 100px;
+    padding: 25px;
+    border: 5px solid black;
+    height: 100px;
+}
+
+.cuadradoClasico1{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+
+.cuadradoClasico2{
+    width: 200px;
+    height: 200px;
+    padding: 50px;
+    background-color: red;
+}
+
+.cuadradoAlternativo1{
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    border: 10px solid black;
+    padding: 10px;
+    background-color: blue;
+}

@@ -1,0 +1,178 @@
+*{
+    font-family: 'Itim', cursive;
+}
+
+.col-12{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.col-6{
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.col-3{
+    box-sizing: border-box;
+    width: 25%;
+}
+
+.col-3{
+    box-sizing: border-box;
+    width: 66.66%;
+}
+
+.col-4{
+    box-sizing: border-box;
+    width: 33.33%;
+}
+
+.flotante{
+    float: left;
+}
+
+.linkDisplay{
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+.itemNav{
+    text-align: center;
+    background-color: rgb(63,217,255);
+    padding: 20px;
+    height: 60px;
+}
+
+.titulo{
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+}
+
+.navegador{
+    height: 60px;
+}
+
+.bgEspecial1{
+    background-color: rgb(121, 245, 209);
+}
+
+.bgEspecial2{
+    background-color: rgb(132, 237, 153);
+}
+
+.bgEspecial3{
+    background-color: rgb(194, 141, 135);
+}
+
+.bgEspecial4{
+    background-color: rgb(60, 247, 240);
+}
+
+.bgEspecial5{
+    background-color: rgb(238, 232, 117);
+}
+
+.bgEspecial6{
+    background-color: rgb(242, 121, 250);
+}
+
+.bgEspecial7{
+    background-color: aquamarine;
+}
+
+.bgEspecial1:hover{
+    background-color: rgb(39, 132,221);
+}
+
+.itemNav:hover{
+    font-size: 16px;
+    background-color: black;
+}
+
+.posEstatico{
+    position: static;
+}
+
+.posRelativo{
+    position: relative;
+    left: 0px;
+    bottom: 650px;
+}
+
+.sec{
+    padding: 25px;
+}
+
+.colorTextRojo{
+    color: rgb(78,0,0);
+    text-decoration: underline;
+}
+
+.colorTextVerde{
+    color: rgb(11,96,103);
+    text-decoration: underline;
+}
+
+.linkDisplay:hover{
+    font-size: 16px;
+    color: black;
+}
+
+.elementoFijo{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.margen15{
+    margin-top: 60px;
+}
+
+.footer{
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+    color: white;
+    margin: 0px;
+}
+
+.posAbsol{
+    position: absolute;
+    top: 300px;
+    right: 0px;
+}
+
+.posPega{
+    position: sticky;
+    top: 0px;
+}
+.imgLink:hover{
+    height: 189px;
+}
+
+.pad15{
+    padding: 15px;
+}
+
+.texCentrado{
+    text-align: center;
+}
+
+.bgFb{
+    background-color: blue;
+    color: white;
+}
+
+.bgAncla{
+    background-color: rgb(68, 230, 182);
+    color: white;
+}
+
+.bgYt{
+    background-color: red;
+    color: white;
+}
