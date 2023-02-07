@@ -14,7 +14,6 @@
     box-sizing: border-box;
 }
 
-
 /*.flotante{
     float: left;
 }*/
@@ -198,9 +197,9 @@ p{
     /*[class*="col-"]{
         /*float: left;
         border: 1px solid black;
-        width: 100%;
-        
+        width: 100%;   
     }*/
+
     .col-12{
         width: 100%;
     }
