@@ -9,6 +9,11 @@
         --altoPantalla: 1000px
 }
 
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+
 /*.flotante{
     float: left;
 }*/
@@ -41,10 +46,6 @@
 .col-8{
     box-sizing: border-box;
     width: 66.66%;
-}
-
-*{
-    font-family: 'Lato', sans-serif;
 }
 
 h1{
@@ -89,18 +90,20 @@ h3{
     /*background-color: var(--bgPrimero);*/
     height: 200px;
     border: 5px solid var(--bgPrimero);
+    /*box-sizing: border-box;*/
 }
 
 .hNav{
     height: 200px;
-    background-color: var(--bgCuarto);
-    border: 5px solid var(--bgTercero);
 }
+
 .itemNav{
     text-align: center;
-    font-size: 35px;
-    padding-top: 70px;
-    padding-bottom: 70px;
+    font-size: 30px;
+    padding-top: 78px;
+    padding-bottom: 78px;
+    background-color: var(--bgCuarto);
+    border: 5px solid var(--bgTercero);
 }
 
 .linkNav{
@@ -155,4 +158,12 @@ p{
 
 .secCliente{
     padding: 30px;
+}
+
+@media only screen and (max-width: 760px){
+    [class*="col-"]{
+        /*float: left;
+        border: 1px solid black;*/
+        width: 100%;
+    }
 }
