@@ -80,7 +80,7 @@ h3{
 }
 
 #Nosotros{
-    height: var(--altoPantalla);
+    min-height: var(--altoPantalla);
     background-color: var(--bgSegundo);
 }
 
@@ -100,8 +100,11 @@ h3{
 }
 
 .imgGall{
-    padding-left: 150px;
-    padding-right: 100px;
+    /*padding-left: 150px;
+    padding-right: 100px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 p{
@@ -116,11 +119,10 @@ p{
 .secHistoriaCliente{
     padding: 50px;
     background-color: var(--bgSegundo_);
-
 }
 
 .secCliente{
-    padding: 30px;
+    padding: 20px;
 }
 
 /*Pantalla pequena*/
@@ -158,7 +160,7 @@ p{
         height: 100px;
         width: 150px;
     }*/
-    
+
     .linkNav{
         font-size: 25px;
     }
@@ -210,5 +212,6 @@ p{
 
     .hNav{
         height: 200px;
+        color: black;
     }
 }
