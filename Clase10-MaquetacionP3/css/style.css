@@ -1,12 +1,13 @@
 :root{
         --txtPrimary: rgb(0,0,123);
         --txtSecond: red;
+        --txtThrid: rgb(46, 253, 46);
         --bgPrimero: rgb(105,136,105);
         --bgSegundo: rgb(185,155,107);
         --bgSegundo_: rgb(128,155,107);
         --bgTercero: rgb(241,219,191);
         --bgCuarto: rgb(170,86,86);
-        --altoPantalla: 1000px
+        --altoPantalla: 850px
 }
 
 *{
@@ -95,7 +96,7 @@ p{
 
 #Servicios{
     height: var(--altoPantalla);
-    background-color: var(--bgSegundo);
+    background-color: var(--bgTercero);
 }
 
 #Contactenos{
@@ -170,6 +171,50 @@ p{
 .bor5{
     border-bottom: 2px solid white;
 }
+
+.tServicios{
+    text-align: center;
+    color: var(--txtThrid);
+    padding-top: 15px;
+    margin: 0px;
+    
+}
+
+.hServicios{
+    height: 80px;
+    padding: 25px;
+}
+
+.servic{
+    min-height: 665px;
+    padding: 20px;
+}
+
+.imgBg1{
+    background-color: brown;
+    background-image: url('../img/imgCasa1.jpg');
+    min-height: 400px;
+    padding: 50px;
+}
+
+.imgBg1{
+    background-image: url('../img/imgCasa1.jpg');
+    min-height: 400px;
+    padding: 50px;
+}
+
+.tServ1{
+    text-align: center;
+}
+
+.bgOpaco{
+    background-color: rgba(170, 86, 86, 0.495);
+}
+
+.desSer1{
+    color: rgb(157,206,210);
+}
+
 
 /*Pantalla pequena*/
 [class*="col-"]{
