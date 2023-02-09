@@ -192,9 +192,6 @@ p{
 
 .imgBg1{
     background-color: brown;
-    background-image: url('../img/imgCasa1.jpg');
-    min-height: 400px;
-    padding: 50px;
 }
 
 .imgBg1{
@@ -215,6 +212,25 @@ p{
     color: rgb(157,206,210);
 }
 
+.imgBg2{
+    background-image: url('../img/imgCasa2.jpg');
+    min-height: 400px;
+    padding: 50px;
+}
+
+.tServ2{
+    text-align: center;
+    color: black;
+}
+
+.bgOpacoServ2{
+    background-color: rgba(105, 136, 105, 0.348);
+}
+
+.desSer2{
+    color: brown;
+}
+
 
 /*Pantalla pequena*/
 [class*="col-"]{
@@ -223,6 +239,8 @@ p{
     box-sizing: border-box;
     /*border: 1px solid black;*/
 }
+
+
 
 
 /*pantalla mediana*/
