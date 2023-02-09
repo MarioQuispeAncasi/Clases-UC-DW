@@ -15,16 +15,25 @@
 
 h1{
     color: var(--txtPrimary);
+    text-align: center;
 }
 
 h2{
-    color: var(--txtPrimary);
+    color: white;
     text-decoration: underline;
 }
 
 h3{
     color: var(--txtPrimary);
 }
+
+p{
+    font-size: 15px;
+    color: var(--txtPrimary);
+    text-align: justify;
+}
+
+/*Solector por clases*/
 
 .primero{
     background-color: var(--bgPrimero);
@@ -107,11 +116,6 @@ h3{
     justify-content: center;
 }
 
-p{
-    font-size: 15px;
-    color: var(--txtSecond);
-}
-
 .secHistoria{
     padding: 10px;
 }
@@ -123,6 +127,48 @@ p{
 
 .secCliente{
     padding: 20px;
+}
+
+.tRedesF{
+    text-align: center;
+    color: blue;
+    margin: 0px;
+}
+
+.pad40{
+    padding: 40px;
+}
+
+.pad20{
+    padding: 20px;
+}
+
+.desFacebook{
+    background-color: var(--bgCuarto);
+}
+
+.desYoutube{
+    background-color: var(--bgTercero);
+}
+
+.tRedesY{
+    text-align: center;
+    color: red;
+    margin: 0px;
+}
+
+.tRedesW{
+    text-align: center;
+    color: #008000;
+    margin: 0px;
+}
+
+.desWhatsapp{
+    background-color: var(--bgPrimero);
+}
+
+.bor5{
+    border-bottom: 2px solid white;
 }
 
 /*Pantalla pequena*/
