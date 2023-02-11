@@ -7,7 +7,8 @@
         --bgSegundo_: rgb(128,155,107);
         --bgTercero: rgb(241,219,191);
         --bgCuarto: rgb(170,86,86);
-        --altoPantalla: 850px
+        --altoPantalla: 850px;
+        --altofooter: 762.4px;
 }
 
 *{
@@ -58,6 +59,7 @@ p{
 
 .header{
     height: 800px;   
+    /*background-color: var(--bgSegundo);*/
 }
 
 .hLogo{
@@ -241,7 +243,6 @@ p{
     min-height: 480px;
 }
 
-
 .footer{
     background-color: black;
 }
@@ -250,7 +251,6 @@ p{
     color: white;
     text-align: center;
     margin: 0px;
-
 }
 
 
