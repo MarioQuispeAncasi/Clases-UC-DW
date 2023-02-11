@@ -2,9 +2,87 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: blue;
+}
+
+p{
+    max-width: 80%;
+}
+div{
+    margin: 100px;
+}
 /* EFECTO DE TEXTO: Por lo general ya no se usa WordArt*/
 
-/* TRANSFORM 2D */
-/* TRANSFORM 3D */
-/* TRANSICIONES */
-/* ANIMACIONES */
+/* TRANSFORM 2D *//*Propiedad*/
+.tras{
+    transform: translate(50px,200px);
+}
+
+.rot{
+    transform: rotate(100deg);
+}
+
+.esc{
+    width: 200px;
+    height: 200px;
+    background-color: violet;
+    margin: 50px;
+    transform: scale(3,3);
+}
+
+.sesg{
+    margin-top: 300px;
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    border: 2px solid black;
+}
+
+#sesgado{
+    transform: skew(33deg,33deg);
+}
+
+/* TRANSFORM 3D *//*Propiedad*/
+
+.t3d{
+    background-color: cadetblue;
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+}
+
+.rtx{
+    transform: rotateX(45deg);
+}
+
+.rty{
+    transform: rotateY(45deg);
+}
+
+.rtz{
+    transform: rotateZ(45deg);
+}
+
+/* TRANSICIONES *//*Metodo
+el tiempo en el cual se toma el elemento a su forma final*/
+
+.divInicial{
+    width: 250px;
+    height: 250px;
+    margin: 75px;
+    background-color: coral;
+    transition: width 3s;
+}
+
+.divFinal{
+    width: 350px;
+}
+
+.divInicial:hover{
+    width: 350px;
+}
+
+/* ANIMACIONES *//*Metodo*/
