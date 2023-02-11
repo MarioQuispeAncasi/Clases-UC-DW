@@ -1,0 +1,290 @@
+*{
+    font-family: 'Comic Neue', cursive;
+}
+
+:root{
+    /*--txtPrimary: rgb(0,0,123);
+    --txtSecond: red;
+    --txtThrid: rgb(46, 253, 46);
+    --bgPrimero: rgb(105,136,105);
+    --bgSegundo: rgb(185,155,107);
+    --bgSegundo_: rgb(128,155,107);
+    --bgTercero: rgb(241,219,191);
+    --bgCuarto: rgb(170,86,86);
+    --altoPantalla: 850px;
+    --altofooter: 762.4px;*/
+    --bgPrimero: #00a7ad;
+    --bgSegundo: #ffce4a;
+    --bgTercero: #0c8141;
+    --bgCuarto: #f8bbae;
+    --bgQuinto: #d0ffd6;
+    --bgSexto: #a8a1e9;
+    --txtPrimary:#083dc5;
+    --altoPantalla: 900px;
+}
+
+h1{
+    color: var(--txtPrimary);
+    text-align: center;
+}
+
+h2{
+    color: white;
+    text-decoration: underline;
+}
+
+h3{
+    color: var(--txtPrimary);
+}
+
+p{
+    font-size: 15px;
+    color: var(--txtPrimary);
+    text-align: justify;
+}
+
+.header{
+    height: 800px;   
+    /*background-color: var(--bgSegundo);*/
+    background-color: var(--bgQuinto);
+}
+
+.hLogo{
+    padding: 40px;
+    /*background-color: var(--bgPrimero);*/
+    height: 200px;
+    border: 5px solid var(--bgTercero);
+}
+
+.imgGall{
+    /*padding-left: 150px;
+    padding-right: 100px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hNav{
+    height: 600px;
+    background-color: var(--bgPrimero);
+    border: 5px solid var(--bgSegundo);
+}
+
+.linkNav{
+    text-decoration: none;
+    color: white;
+}
+
+.linkNav:hover{
+    color: var(--bgSegundo);
+    font-weight: bolder;
+}
+
+.itemNav{
+    text-align: center;
+    font-size: 35px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.elementoFijo {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#Nosotros{
+    min-height: var(--altoPantalla);
+    background-color: var(--bgCuarto);
+}
+
+.secHistoria{
+    padding: 10px;
+}
+
+.formatoImagen{
+    width: 240px;
+    height: 140px;
+    border: 2px solid white;
+}
+
+.formatoVideo{
+    width: 400px;
+    height: 300px;
+    border: 5px solid var(--bgQuinto);
+}
+
+.secCliente{
+    padding: 20px;
+}
+
+.secHistoriaCliente{
+    padding: 50px;
+    background-color: var(--bgSexto);
+}
+
+.txtBlanco{
+    color: white;
+    text-align: center;
+}
+
+.btnCentrado{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+
+[class*="col-"]{
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    /*border: 1px solid black;*/
+}
+
+/*pantalla pequena*/
+@media only screen and (min-width: 0px) {
+    .col-pq-12{
+        width: 100%;
+    }
+    
+    .col-pq-6{
+        width: 50%;
+    }
+    
+    .col-pq-3{
+        width: 25%;
+    }
+    
+    .col-pq-4{
+        width: 33.33%;
+    }
+    
+    .col-pq-8{
+        width: 66.66%;
+    }
+
+    .col-pq-2{
+        width: 16.66%;
+    }
+
+}
+
+@media only screen and (max-width: 1200px){
+    .imgLogo{
+        width: 200px;
+         /*padding-right: 100px;*/
+ 
+         display: flex;
+         align-items: center;
+         justify-content: center;
+    }
+}
+
+
+/*pantalla mediana*/
+@media only screen and (min-width: 590px) {
+    .col-md-12{
+        width: 100%;
+    }
+    
+    .col-md-6{
+        width: 50%;
+    }
+    
+    .col-md-3{
+        width: 25%;
+    }
+    
+    .col-md-4{
+        width: 33.33%;
+    }
+    
+    .col-md-8{
+        width: 66.66%;
+    }
+
+    .col-md-5{
+        width: 41.66%;
+    }
+
+    .col-md-7{
+        width: 58.33;
+    }
+
+    /*.formatoImagen{
+        height: 100px;
+        width: 150px;
+    }*/
+
+    .linkNav{
+        font-size: 25px;
+    }
+
+    .header{
+        height: 200px;
+    }
+
+    .hNav{
+        height: 200px;
+    }
+
+}
+
+
+@media only screen and (min-width: 900px){
+    /*[class*="col-"]{
+        /*float: left;
+        border: 1px solid black;
+        width: 100%;   
+    }*/
+
+    .col-12{
+        width: 100%;
+    }
+    
+    .col-6{
+        width: 50%;
+    }
+    
+    .col-3{
+        width: 25%;
+    }
+    
+    .col-4{
+        width: 33.33%;
+    }
+    
+    .col-8{
+        width: 66.66%;
+    }
+
+    .col-5{
+        width: 41.66%;
+    }
+
+    .col-7{
+        width: 58.33;
+    }
+
+    img{
+        height: 100px;
+        width: 360px;
+    }
+
+    .header{
+        height: 200px;
+    }
+
+    .hNav{
+        height: 200px;
+        color: black;
+    }
+}
+
+@media only screen and (max-width:1265px) {
+    .formatoImagen{
+        height: 100px;
+        width: 150px;
+    }
+}

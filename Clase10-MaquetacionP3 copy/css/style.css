@@ -23,11 +23,13 @@ h1{
 h2{
     color: white;
     text-decoration: underline;
-    text-align: left;
 }
 
 h3{
     color: var(--txtPrimary);
+    text-align: right;
+    margin: 0px;
+    padding: 0px;
 }
 
 p{
