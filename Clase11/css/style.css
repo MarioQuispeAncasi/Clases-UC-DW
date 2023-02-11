@@ -6,6 +6,7 @@ h1{
     text-align: center;
     text-transform: uppercase;
     color: blue;
+    margin: 0px;
 }
 
 p{
@@ -85,4 +86,170 @@ el tiempo en el cual se toma el elemento a su forma final*/
     width: 350px;
 }
 
+.divVal{
+    width: 250px;
+    height: 250px;
+    margin: 75px;
+    background-color: green;
+    transition: width 3s height 5s;
+}
+
+.divValFinal{
+    width: 350px;
+    height: 350px;
+}
+
+.divVal:hover{
+    width: 350px;
+    height: 350px;
+}
+    /*Delay*/
+.divDel{
+    width: 200px;
+    height: 200px;
+    margin: 75px;
+    background-color: blue;
+    transition: height 4s;
+    transition-delay: 2s;
+
+}
+
+.divDelFinal{
+    height: 300px;
+}
+
+.divDel:hover{
+    height: 350px;
+}
+
+.divTrans{
+    width: 170px;
+    height: 170px;
+    margin: 75px;
+    background-color: aquamarine;
+    transition: width 3s, height 3s, transform 3s;
+}
+
+.divTransFinal{
+    width: 250px;
+    height: 250px;
+    transform: rotate(315deg);
+    transition: width 3s, height 3s, transform 3s;
+}
+
+.divTrans:hover{
+    width: 250px;
+    height: 250px;
+    transform: rotate(135deg);
+}
+
+.divTransFinal:hover{
+    width: 170px;
+    height: 170px;
+    transform: rotate(315deg);
+}
+
+
+
 /* ANIMACIONES *//*Metodo*/
+
+@keyframes ejemplo {
+    from{
+        background-color: red;
+        width: 300px;
+        height: 300px;
+    }to{
+        background-color: rgb(208,0,255);
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@keyframes movimiento{
+    0%{
+        background-color: red;
+        left: 50px;
+        top: 86.8px;
+    }25%{
+        background-color: aqua;
+        left: 150px;
+        top: 286.8px;
+    }50%{
+        background-color: blueviolet;
+        left: 550px;
+        top: 486.8px;
+    }75%{
+        background-color: yellow;
+        left: 250px;
+        top: 686.8px;
+    }100%{
+        background-color: green;
+        left: 50px;
+        top: 86.8px;
+    }
+    
+}
+
+@keyframes mover{
+    0%{
+        background-color: greenyellow;
+        left: 50px;
+        top: 86.8px;
+    }20%{
+        background-color: blue;
+        left: 150px;
+        top: 286.8px;
+    }40%{
+        background-color: palevioletred;
+        left: 550px;
+        top: 486.8px;
+    }60%{
+        background-color: yellow;
+        left: 250px;
+        top: 586.8px;
+    }
+    80%{
+        background-color: burlywood;
+        left: 250px;
+        top: 200.8px;
+    }100%{
+        background-color: peru;
+        left: 50px;
+        top: 86.8px;
+    }
+    
+}
+
+.divEjemplo{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(255, 0, 0);
+    margin: 50px;
+    animation-name: ejemplo;
+    animation-duration: 10s;
+    animation-delay: 1s;
+}
+
+.divMover{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 50px;
+    position: relative;
+    animation-name: movimiento;
+    animation-duration: 10s;
+}
+
+.divMovimiento{
+    width: 75px;
+    height: 75px;
+    margin: 50px;
+    position: relative;
+    background-color: greenyellow;
+    animation-name: mover;
+    animation-duration: 20s;
+    /*animation-direction: reverse;*/
+    /*animation-direction: alternate;*/
+    /*animation-direction: alternate-reverse;*/
+    animation-iteration-count: infinite;
+}
