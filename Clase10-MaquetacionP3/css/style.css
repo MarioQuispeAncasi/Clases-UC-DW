@@ -242,6 +242,17 @@ p{
 }
 
 
+.footer{
+    background-color: black;
+}
+
+.txtFooter{
+    color: white;
+    text-align: center;
+    margin: 0px;
+
+}
+
 
 
 /*Pantalla pequena*/
