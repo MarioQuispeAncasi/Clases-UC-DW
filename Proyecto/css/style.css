@@ -19,8 +19,9 @@
     --bgCuarto: #f8bbae;
     --bgQuinto: #d0ffd6;
     --bgSexto: #a8a1e9;
+    --bgSeptimo: #00d5dc;
     --txtPrimary:#083dc5;
-    --altoPantalla: 900px;
+    --altoPantalla: 1000px;
 }
 
 h1{
@@ -64,15 +65,41 @@ p{
     justify-content: center;
 }
 
+/*.divVal{
+    transition: width 3s, height 3s;
+}
+
+.divVal:hover{
+    width: 272px;
+    height: 206px;
+    position: sticky;
+}*/
+
+/*.divVal1{
+    transition: width 3s, height 3s;
+}
+
+.divVal1:hover{
+    width: 360px;
+    height: 214px;
+    position:absolute;
+    top: 153px;
+    right: 103px;
+}*/
+
 .hNav{
     height: 600px;
     background-color: var(--bgPrimero);
     border: 5px solid var(--bgSegundo);
 }
 
+
 .linkNav{
     text-decoration: none;
     color: white;
+}
+.mt0{
+    margin-top: 0px;
 }
 
 .linkNav:hover{
@@ -87,10 +114,15 @@ p{
     padding-bottom: 70px;
 }
 
+
 .elementoFijo {
     position: fixed;
     top: 0;
     right: 0;
+}
+
+.margen-180{
+    margin-top: 180px;
 }
 
 #Nosotros{
@@ -116,6 +148,7 @@ p{
 
 .secCliente{
     padding: 20px;
+    margin-top: 20px;
 }
 
 .secHistoriaCliente{
@@ -133,6 +166,17 @@ p{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5px;
+}
+
+.pgTransImg{
+    transition: width 3s, height 3s;
+}
+
+.pgTransImg:hover{ 
+    width: 290px;
+    height: 140px;
+    position: relative;
+    right: 30px;
 }
 
 [class*="col-"]{
@@ -167,20 +211,23 @@ p{
     .col-pq-2{
         width: 16.66%;
     }
-
-}
-
-@media only screen and (max-width: 1200px){
-    .imgLogo{
-        width: 200px;
-         /*padding-right: 100px;*/
- 
-         display: flex;
-         align-items: center;
-         justify-content: center;
+    .pqTransImg{
+        transition: width 3s, height 3s;
     }
-}
+    
+    .pqTransImg:hover{
+        width: 210px;
+        height: 158px;
+        position: sticky;
+        right: 40px;
+    }
+    /*.pqTransImg:hover{
+        width: 272px;
+        height: 206px;
+        position: sticky;
+    }*/
 
+}
 
 /*pantalla mediana*/
 @media only screen and (min-width: 590px) {
@@ -228,7 +275,23 @@ p{
     .hNav{
         height: 200px;
     }
+    /*.elementoFijo {
 
+        top: 0;
+        right: 0;
+    }*/
+
+    .pmTransImg{
+        transition: width 3s, height 3s;
+    }
+    
+    .pmTransImg:hover{ 
+        width: 198.4px;
+        height: 140px;
+        position: relative;
+        right: 25px;
+    }
+    
 }
 
 
@@ -280,11 +343,67 @@ p{
         height: 200px;
         color: black;
     }
+
+    /*.elementoFijo {
+        position: fixed;
+        top: 0;
+        right: 0;
+    }*/
+
+    .pgTransImg{
+        position: static;
+        transition: width 3s, height 3s;
+    }
+    
+    .pgTransImg:hover{ 
+        width: 198.4px;
+        height: 140px;
+        position: relative;
+        right: 30px;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .imgLogo{
+        width: 200px;
+         /*padding-right: 100px;*/
+ 
+         display: flex;
+         align-items: center;
+         justify-content: center;
+    }
+
 }
 
 @media only screen and (max-width:1265px) {
     .formatoImagen{
-        height: 100px;
         width: 150px;
+        height: 100px;
+        
+    }
+    /*.pgTransImg{
+        transition: width 3s, height 3s;
+    }
+    
+    .pgTransImg:hover{ 
+        width: 290px;
+        height: 140px;
+        position: relative;
+        right: 30px;
+    }*/
+    
+}
+
+@media only screen and (min-width:1265px) {
+    .pgTransImg{
+        position: inherit;
+        transition: width 3s, height 3s;
+    }
+    
+    .pgTransImg:hover{ 
+        width: 290px;
+        height: 200px;
+        position: sticky;
     }
 }
+
