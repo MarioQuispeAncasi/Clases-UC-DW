@@ -74,6 +74,13 @@ p{
     background-color: var(--bgCuarto);
     border: 5px solid var(--bgTercero);
 }
+
+.hNav:hover{
+    height: 600px;
+    background-color: var(--bgCuarto);
+    border: 5px solid var(--bgTercero);
+}
+
 .itemNav{
     text-align: center;
     font-size: 35px;
