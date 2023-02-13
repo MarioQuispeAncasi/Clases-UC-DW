@@ -3,16 +3,6 @@
 }
 
 :root{
-    /*--txtPrimary: rgb(0,0,123);
-    --txtSecond: red;
-    --txtThrid: rgb(46, 253, 46);
-    --bgPrimero: rgb(105,136,105);
-    --bgSegundo: rgb(185,155,107);
-    --bgSegundo_: rgb(128,155,107);
-    --bgTercero: rgb(241,219,191);
-    --bgCuarto: rgb(170,86,86);
-    --altoPantalla: 850px;
-    */
     --bgPrimero: #00a7ad;
     --bgSegundo: #ffce4a;
     --bgTercero: #0c8141;
@@ -93,34 +83,10 @@ p{
 }
 
 .imgGall{
-    /*padding-left: 150px;
-    padding-right: 100px;*/
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-/*.divVal{
-    transition: width 3s, height 3s;
-}
-
-.divVal:hover{
-    width: 272px;
-    height: 206px;
-    position: sticky;
-}*/
-
-/*.divVal1{
-    transition: width 3s, height 3s;
-}
-
-.divVal1:hover{
-    width: 360px;
-    height: 214px;
-    position:absolute;
-    top: 153px;
-    right: 103px;
-}*/
 
 .hNav{
     height: 600px;
@@ -152,7 +118,6 @@ p{
     padding-top: 70px;
     padding-bottom: 70px;
 }
-
 
 .elementoFijo {
     position: fixed;
@@ -271,14 +236,13 @@ p{
     align-items: center;
     justify-content: center;
     height: 450px;
-    
 }
-
 
 .servic{
     min-height: 500px;
     padding: 20px;
 }
+
 .imgBg2{
     background-color: brown;
 }
@@ -290,6 +254,7 @@ p{
     padding: 50px;
     border: 5px solid white;
 }
+
 .bgOpaco2{
     background-color: rgba(170, 86, 86, 0.495);
 }
@@ -315,6 +280,7 @@ p{
     padding: 50px;
     border: 5px solid white;
 }
+
 .bgOpaco3{
     background-color: rgba(0, 0, 0, 0.327);
 }
@@ -332,10 +298,6 @@ p{
     color: rgb(252, 60, 60);
 }
 
-
-
-
-
 .imgBg4{
     background-color: brown;
 }
@@ -347,10 +309,10 @@ p{
     padding: 50px;
     border: 5px solid white;
 }
+
 .bgOpaco4{
     background-color: rgba(25, 70, 28, 0.536);
 }
-
 
 .tTour4{
     margin-top: 30px;
@@ -369,11 +331,6 @@ p{
 }
 
 
-
-
-
-
-
 .imgBg5{
     background-color: brown;
 }
@@ -385,6 +342,7 @@ p{
     padding: 50px;
     border: 5px solid white;
 }
+
 .bgOpaco5{
     background-color: rgba(167, 72, 194, 0.562);
 }
@@ -401,8 +359,7 @@ p{
 .tRedes{
     color: #b34855;
     text-align: left;
-    margin: 0px 40px 40px 40px;
-    
+    margin: 0px 40px 40px 40px; 
 }
 
 .tRedesF{
@@ -450,7 +407,6 @@ p{
     color: white;
 }
 
-
 .tRedesY{
     text-align: center;
     color: red;
@@ -468,7 +424,6 @@ p{
     border: 5px solid var(--bgPrimero);
     text-align: center;
     margin: 32px;
-    
 }
 
 .tRedesW{
@@ -519,7 +474,6 @@ p{
     margin: 32px;
 }
 
-
 .tRedesTT{
     text-align: center;
     color: var(--txtSecond);
@@ -561,26 +515,17 @@ p{
 .bgImgCU{
     background-image: url('../img/MacchuPicchu.png');
     background-repeat:round;
-    /*max-width: 351px;
-    max-height: 370px;
-    padding: 20px;
-    padding-right: 50px;
-    text-align: center;
-    border: 5px solid var(--bgSexto); 
-    margin: 50px;*/
     max-height: 150px;
     max-width: 351px;
     padding: 20px;
     text-align: center;
     border: 5px solid black; 
     margin: 32px;
-
 }
+
 .pad20{
     padding: 20px;
 }
-
-
 
 .txtblanco4{
     color: white;
@@ -596,13 +541,43 @@ p{
     text-align: center;
 }
 
-.bgCardContac{
-    background-color: rgb(15, 119, 15);
-    min-height: 480px;
+/*
+Formulario*/
+.bgform{
+    background-color: var(--bgSexto);
+    border: 5px solid white;
+}
+.formulario{
+    display: block;
+    text-align: justify;
+    padding-left: 20px;
+    padding-bottom: 10px;
 }
 
+.bgMap{
+    background-color: #e77d8e;
+    border: 5px solid white;
+    height: 480px;
+    min-height: 470px;
+    
+}
 
+.h2Map{
+    text-align: left;
+    font-weight: bold;
+    color: var(--bgCuarto);
+}
 
+.formatoMapa{
+    max-width: 465px;
+    max-height: 307px;
+}
+
+.txtFooter{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
 
 [class*="col-"]{
     width: 100%;
@@ -646,11 +621,7 @@ p{
         position: sticky;
         right: 40px;
     }
-    /*.pqTransImg:hover{
-        width: 272px;
-        height: 206px;
-        position: sticky;
-    }*/
+
 
 }
 
