@@ -1,3 +1,26 @@
-body{
-    background-color: rgb(252, 176, 176);
+/*Boostrap*/
+/*Colores en Boostrap*/
+/*
+    Primary --> Outline
+    Secondary
+    Success
+    Danger
+    Warning
+    Info
+    Light
+    Dark
+*/
+
+.button{
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 15%;
+    border: 3px solid black;
+    text-decoration: none;
+}
+
+.button:hover{
+    color: black;
+    font-size: bold;
 }

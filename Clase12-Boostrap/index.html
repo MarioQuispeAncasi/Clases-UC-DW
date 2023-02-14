@@ -5,13 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
     <title>Boostrap y Js</title>
 </head>
 <body>
-    <a href="https://getbootstrap.com/" target="_blank" title="boostrap">bootstrap.com</a>
-    <br>
-    <button onclick="miFuncion();">Click</button>
+    <!--Para activar el modelo de 12 columnas en boostrap pones row en 
+        el primer class del div (ya no es necesario poner en el primer class
+        col-md-12 porque con "ROW" ya viene incorporado el modelo de 12 columas)
+    -->
+    <div class="row">
+        <div class="col-md-5 bg-dark">
+            <h1 class="text-light text-center">Inmobiliaria</h1>
+        </div>
+
+        <div class="col-md-7 bg-light">
+            <!--En la pagina de boostrap.com buscas NAVBAR
+            y te dan navegaciones ya creadas, reemplazas 
+            desde el primer div class="row"-->
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="" class="btn btn-primary">Nosotros</a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="" class="btn btn-secondary">Contactenos</a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="" class="btn btn-danger">Servicios</a>
+                </div>
+                <!--Tamano para los botones: sizing
+                https://getbootstrap.com/docs/5.3/utilities/sizing/-->
+            </div>
+        </div>
+    </div>
 </body>
 </html>
