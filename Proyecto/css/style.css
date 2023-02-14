@@ -519,7 +519,7 @@ p{
     max-width: 351px;
     padding: 20px;
     text-align: center;
-    border: 5px solid black; 
+    border: 5px solid var(--bgPrimero); 
     margin: 32px;
 }
 
