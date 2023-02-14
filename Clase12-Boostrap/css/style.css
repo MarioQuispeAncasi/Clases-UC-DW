@@ -10,6 +10,13 @@
     Light
     Dark
 */
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+h1{
+    text-transform: uppercase;
+}
 
 .button{
     padding: 10px;
@@ -27,4 +34,21 @@
 
 .hLogo:hover{
     color: blueviolet;
+}
+
+.pad30{
+    padding: 30px;
+}
+
+.imgMax{
+    max-height: 700px;
+}
+
+.imgRGBA{
+    background-color: rgb(134, 245, 245);
+}
+
+#Contactenos{
+    background-color: rgb(117, 243, 220);
+    padding: 45px;
 }
