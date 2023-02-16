@@ -7,8 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/script.js"></script>
+    
     <title>Document</title>
+    <script src="js/script.js"></script>
     
 </head>
 <body>
@@ -20,7 +21,7 @@
             <button class="btn btn-success" onclick="Suma();">
                 Saludar</button>            
         </div>
-        <div class="col-md-5">   </div>
+        <div class="col-md-5"></div>
 
         <h1 class="text-center text-warning text-secondary" 
             id="textoMostrar">Variables</h1>
@@ -30,8 +31,126 @@
                 <button class="btn btn-danger" onclick="Mostrar();">
                     Ver Texto</button>
             </div>
-            <div class="col-md-5"></div>
+            <div class="col-md-5">
+            </div>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <h1 class="text-center text-bg-dark text-light">Operadores - Restar</h1>
+            <input id= "numero1R" value="0" type="number" placeholder="Ingrese Numero">
+            <input id = "numero2R" value="0" type=" number" placeholder="Ingrese Numero">
+            <button class="btn btn-info" onclick="Restar();">Operar</button>
+            <h2 id="resultadoR" class="text-center text-bg-dark text-light">Resultado</h2>
+        </div>
+        <div class="col-md-4">
+            <h1 class="text-center text-bg-dark text-light">Operadores - Sumar</h1>
+            <input id= "numero1S" value="0" type="number" placeholder="Ingrese Numero">
+            <input id = "numero2S" value="0" type=" number" placeholder="Ingrese Numero">
+            <button class="btn btn-info" onclick="Adicion();">Operar</button>
+            <h2 id="resultadoS" class="text-center text-bg-dark text-light">Resultado</h2>
+        </div>
+        <div class="col-md-4">
+            <h1 class="text-center text-bg-dark text-light">Operadores - Multiplicar</h1>
+            <input id= "numero1M" value="0" type="number" placeholder="Ingrese Numero">
+            <input id = "numero2M" value="0" type=" number"placeholder="Ingrese Numero">
+            <button class="btn btn-info" onclick="Multiplicar();">Operar</button>
+            <h2 id="resultadoM" class="text-center text-bg-dark text-light">Resultado</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <h1 class="text-center text-bg-dark text-light">Operadores - Dividir</h1>
+            <input id= "numero1D" value="0" type="number" placeholder="Ingrese Numero">
+            <input id = "numero2D" value="0" type=" number" placeholder="Ingrese Numero">
+            <button class="btn btn-info" onclick="Dividir();">Operar</button>
+            <h2 id="resultadoD" class="text-center text-bg-dark text-light">Resultado</h2>
+        </div>
+        <div class="col-md-4">
+            <h1 class="text-center text-bg-dark text-light">Operadores - Modulo o Residuo</h1>
+            <input id= "numero1MR" value="0" type="number" placeholder="Ingrese Numero">
+            <input id = "numero2MR" value="0" type=" number" placeholder="Ingrese Numero">
+            <button class="btn btn-info" onclick="Residuo();">Operar</button>
+            <h2 id="resultadoMR" class="text-center text-bg-dark text-light">Resultado</h2>
+        </div>
+        <div class="col-md-4">
+            <h1 class="text-center text-bg-dark text-light">Operadores - Potencia</h1>
+            <input id= "numero1P" value="0" type="number" placeholder="Ingrese Numero">
+            <input id = "numero2P" value="0" type=" number" placeholder="Ingrese Numero">
+            <button class="btn btn-info" onclick="Potencia();">Operar</button>
+            <h2 id="resultadoP" class="text-center text-bg-dark text-light">Resultado</h2>
+        </div>
+    </div>
+
+    <!--<div class="row">
+        <div class="col-md-4">
+            <h1 class="text-center text-bg-dark text-light">Operadores - Radicacion</h1>
+            <input id= "numero1Raiz" value="0" type="number" placeholder="Ingrese Numero">
+            <input id = "numero2Raiz" value="0" type=" number" placeholder="Ingrese Numero">
+            <button class="btn btn-info" onclick="Raiz();">Operar</button>
+            <h2 id="resultadoRaiz" class="text-center text-bg-dark text-light">Resultado</h2>
+        </div>
+        <div class="col-md-4">
+            <h1 class="text-center text-bg-dark text-light">Operadores - Modulo o Residuo</h1>
+            <input id= "numero1MR" value="0" type="number" placeholder="Ingrese Numero">
+            <input id = "numero2MR" value="0" type=" number" placeholder="Ingrese Numero">
+            <button class="btn btn-info" onclick="Residuo();">Operar</button>
+            <h2 id="resultadoMR" class="text-center text-bg-dark text-light">Resultado</h2>
+        </div>
+        <div class="col-md-4">
+            <h1 class="text-center text-bg-dark text-light">Operadores - Potencia</h1>
+            <input id= "numero1P" value="0" type="number" placeholder="Ingrese Numero">
+            <input id = "numero2P" value="0" type=" number" placeholder="Ingrese Numero">
+            <button class="btn btn-info" onclick="Potencia();">Operar</button>
+            <h2 id="resultadoP" class="text-center text-bg-dark text-light">Resultado</h2>
+        </div>
+    </div>-->
+    
+    <div class="row">
+        <div class="col-md-4">
+            <h1 class="text-center bg-info text-secondary">Operadores Math</h1>
+            <button class="btn btn-info" onclick="mAbsoluto();">
+            Absoluto</button>
+            <h2 class="text-center bg-info text-secondary" id="resultadoAbs">
+                Resultado
+            </h2>
+        </div>
+        <div class="col-md-4">
+            <h1 class="text-center bg-info text-secondary">Operadores Math</h1>
+            <button class="btn btn-info" onclick="mRedondear();">
+            Redondear</button>
+            <h2 class="text-center bg-info text-secondary" id="resultadoRe">
+                Resultado
+            </h2>
+        </div>
+        <div class="col-md-4">
+            <h1 class="text-center bg-info text-secondary">Operadores Math</h1>
+            <button class="btn btn-info" onclick="mTruncar();">
+            Truncar</button>
+            <h2 class="text-center bg-info text-secondary" id="resultadoMT">
+                Resultado
+            </h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <h1 class="text-center bg-info text-secondary">Operadores Math</h1>
+            <button class="btn btn-info" onclick="mAleatorio();">
+            Aleatorio</button>
+            <h2 class="text-center bg-info text-secondary" id="resultadoAL">
+                Resultado
+            </h2>
+        </div>
+
+        <div class="col-md-4">
+            <h1>AAAAAA</h1>
+            <button class="btn btn-info" onclick="Bool();">
+            Boolean</button>
+        </div>
+    </div>
+
 </body>
 </html>
