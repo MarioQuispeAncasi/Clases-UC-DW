@@ -45,3 +45,10 @@ function CortarSubstr(){
     textoPrincipal = cadenaCapturada.substr(3,5);
     document.getElementById("lblSubstr").innerHTML = textoPrincipal;
 }
+
+function Reemplazar(){
+    let cadenaCapturada = document.getElementById("txtCaptura").value;
+    textoPrincipal = cadenaCapturada.replace("AX","AM");
+    document.getElementById("lblReplace").innerHTML = textoPrincipal;
+
+}
