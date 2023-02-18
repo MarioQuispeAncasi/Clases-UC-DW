@@ -13,8 +13,10 @@ var textoPrincipal = "";
     
     textoPrincipal = 'H'+'O'+'L'+'A';
     alert(textoPrincipal);
-}
-*/
+
+    let cadenaCapturada = document.getElementById("txtCaptura").value;
+}*/
+
 
 function CapturarValor(){
     let cadenaCapturada = document.getElementById("txtCaptura").value;
@@ -50,5 +52,32 @@ function Reemplazar(){
     let cadenaCapturada = document.getElementById("txtCaptura").value;
     textoPrincipal = cadenaCapturada.replace("AX","AM");
     document.getElementById("lblReplace").innerHTML = textoPrincipal;
+}
 
+function LimpiarTexto(){
+    let cadenaCapturada = document.getElementById("txtCaptura").value;
+    textoPrincipal = cadenaCapturada.trim();
+    //textoPrincipal = cadenaCapturada.replaceAll(" ","");
+    document.getElementById("lblTrim").innerHTML = textoPrincipal;
+}
+
+function ConcatenarTexto(){
+    let cadenaCapturada = document.getElementById("txtCaptura").value;
+    let saludo = "Hola";
+    textoPrincipal = cadenaCapturada.concat(" ",saludo);
+    document.getElementById("lblConcatenar").innerHTML = textoPrincipal;
+}
+
+function MostrarComidaRoco(){
+    let roco = {
+        tipoAnimal:"Perro",
+        color:"Negro",
+        colorOjos:"Verdes",
+        comida: function(){
+            return "Roco comer 3 kg de carne al dia"
+        }
+    };
+
+    document.getElementById("lblComida").innerHTML = roco.comida();
+    
 }
