@@ -26,3 +26,22 @@ function CantidadCaracteres(){
     textoPrincipal = cadenaCapturada.length;
     document.getElementById("lblLength").innerHTML = textoPrincipal
 }
+
+
+function CortarSlide(){
+    let cadenaCapturada = document.getElementById("txtCaptura").value;
+    textoPrincipal = cadenaCapturada.slice(3,5);
+    document.getElementById("lblSlide").innerHTML = textoPrincipal;
+}
+
+function CortarSubstring(){
+    let cadenaCapturada = document.getElementById("txtCaptura").value;
+    textoPrincipal = cadenaCapturada.substring(3,7);
+    document.getElementById("lblSubstring").innerHTML = textoPrincipal;
+}
+
+function CortarSubstr(){
+    let cadenaCapturada = document.getElementById("txtCaptura").value;
+    textoPrincipal = cadenaCapturada.substr(3,5);
+    document.getElementById("lblSubstr").innerHTML = textoPrincipal;
+}
