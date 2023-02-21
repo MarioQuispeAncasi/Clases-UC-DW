@@ -1,10 +1,15 @@
 var texto = "Hola";
 
+var frutas = ["platano", "naranja", "durazno"];
 
 /*
 function Saludar(){
     console.log("Enviando texto...");
 }*/
+
+function Mostrar(){
+    console.log(frutas[0]);
+}
 
 function Comparar(){
     let numero1 = document.getElementById("txtNumero1").value; 
@@ -40,3 +45,28 @@ function Rangos(){
     }
     document.getElementById("lblResultadoV").innerHTML = mensaje;
 }
+
+function HallarPremio(){
+    let opcionSeleccionada =parseInt(document.getElementById("ddPremio").value); 
+    let mensaje = "Premio";
+
+    if(opcionSeleccionada != 0){
+        switch (opcionSeleccionada) {
+            case 1: 
+                mensaje = "Te ganaste un viaje";
+                break;
+            case 2: 
+                mensaje = "Te ganaste una camioneta";
+                break;
+            case 3: 
+                mensaje = "Te ganaste una casa";
+                break;
+        
+            default:
+                mensaje = "";
+                break;
+        }
+    }
+    document.getElementById("lblResultadoS").innerHTML = mensaje;
+}
+
