@@ -70,3 +70,18 @@ function HallarPremio(){
     document.getElementById("lblResultadoS").innerHTML = mensaje;
 }
 
+function Contar(){
+    for (let i = 0; i < 11; i++) {
+        console.log(i);
+    }
+}
+
+function Imprimir(){
+    let relleno = "";
+    let numeroTope= document.getElementById("txtNumeroFor").value;
+    
+    for (let i = 0; i < numeroTope; i++) {
+        relleno = relleno + "<h2 class='text-center text-light bg-secondary'>" + i + "</h2><br>";
+    }
+    document.getElementById("resultadoFor").innerHTML = relleno;
+}
