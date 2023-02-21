@@ -12,6 +12,18 @@
 </head>
 <body>
     <h1 class="text-center bg-dark text-light">Sentencias</h1>
-    <button onclick="Saludar();">Saludar</button>
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 text-center">
+            <h2 class="text-primary bg-light">Sentencias IF</h2>
+            <input type="number" id="txtNumero1" placeholder="Primer numero" value="0">
+            <input type="number" id="txtNumero2" placeholder="Segundo numero" value="0">
+            <br>
+            <button class="btn btn-info" onclick="Comparar();">Procesar</button>
+            <h2 id="lblResultado" class="text-center text-light bg-warning">Resultado</h2>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+    
 </body>
 </html>
