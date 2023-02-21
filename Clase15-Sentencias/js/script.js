@@ -24,3 +24,19 @@ function Comparar(){
     }
     document.getElementById("lblResultado").innerHTML = mensaje;
 }
+
+function Rangos(){
+    let numero = document.getElementById("txtNumero").value; 
+    let mensaje = "";
+
+    if(numero=>100 && numero>0){
+        mensaje = "El numero es positivo y mayor o igual a 100";
+    }
+    else if(numero<100){
+        mensaje = "El numero es positivo y menor que 100";
+    }
+    else{
+        mensaje = "El numero no se encuentra en ningun rango";
+    }
+    document.getElementById("lblResultadoV").innerHTML = mensaje;
+}
