@@ -97,3 +97,23 @@ function ImprimirWhile(){
     }
     document.getElementById("resultadoWhile").innerHTML = relleno;
 }
+
+function RecorrerNombre(){
+    let relleno = "";
+    let nombre = document.getElementById("txtNombre").value;
+    let nombreArray = nombre.split('');
+    let numeroTope = nombreArray.length;
+    let i=0;
+
+    /*for (let i = 0; i < numeroTope; i++) {
+        relleno = relleno + "<h2 class='text-center text-light bg-secondary'>" 
+        + nombreArray[i] + "</h2><br>";
+    }*/
+
+    while (i<numeroTope) {
+        relleno = relleno + "<h2 class='text-center text-light bg-secondary'>" 
+        + nombreArray[i] + "</h2><br>";
+        i++;
+    }
+    document.getElementById("resultadoNombre").innerHTML = relleno;
+}
