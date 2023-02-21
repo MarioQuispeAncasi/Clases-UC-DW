@@ -80,8 +80,20 @@ function Imprimir(){
     let relleno = "";
     let numeroTope= document.getElementById("txtNumeroFor").value;
     
-    for (let i = 0; i < numeroTope; i++) {
+    for (let i = 0; i <= numeroTope; i++) {
         relleno = relleno + "<h2 class='text-center text-light bg-secondary'>" + i + "</h2><br>";
     }
     document.getElementById("resultadoFor").innerHTML = relleno;
+}
+
+function ImprimirWhile(){
+    let relleno = "";
+    let numeroTope= document.getElementById("txtNumeroWhile").value;
+    let i = 0;
+
+    while (i<=numeroTope) {
+        relleno = relleno + "<h2 class='text-center text-info'>" + i + "</h2><br>";
+        i++;
+    }
+    document.getElementById("resultadoWhile").innerHTML = relleno;
 }
