@@ -117,3 +117,54 @@ function RecorrerNombre(){
     }
     document.getElementById("resultadoNombre").innerHTML = relleno;
 }
+
+function Mis(){
+    let nombre = document.getElementById("txtNombre").value;
+    let mensaje = "";
+    //busqueda
+    if (nombre.indexOf("A")>=0) {
+        mensaje = "Dentro del texto existe la letra A"
+    }else{
+        mensaje = "No existe la letra A";
+    }
+
+    console.log(nombre.search("A"));
+    //alert(mensaje);
+}
+
+function ArrayObjeto(){
+    let perrera = [];
+    let perro1 = {
+        raza: "Labrador",
+        colorPelaje:"Marron",
+        peso: "30Kg",
+        altura:"90centimetros",
+        ladrar: function(){
+            return "Guau Guau";
+        }
+    }
+    let perro2 = {
+        raza: "Labrador",
+        colorPelaje:"Azul",
+        peso: "30Kg",
+        altura:"80centimetros"
+    }
+    let perro3 = {
+        raza: "Labrador",
+        colorPelaje:"Blanco",
+        peso: "30Kg",
+        altura:"100centimetros"
+    }
+    let perro4 = {
+        raza: "Labrador",
+        colorPelaje:"Negro",
+        peso: "30Kg",
+        altura:"120centimetros"
+    }
+    perrera.push(perro1);
+    perrera.push(perro2);
+    perrera.push(perro3);
+    perrera.push(perro4);
+
+    console.log(perrera[0].ladrar)
+}
