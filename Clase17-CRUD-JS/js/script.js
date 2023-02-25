@@ -26,6 +26,5 @@ function GuardarIntegrante(){
     document.getElementById("txtCorreo").value="";
     document.getElementById("txtTelefono").value="";
     ncodigo=0;
-    
 }
 
