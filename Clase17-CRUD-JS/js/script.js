@@ -1,7 +1,7 @@
 var integrantes = [];
-var ncodigo = 0;
+var nCodigo = 0;
 function GuardarIntegrante(){
-    codigo = integrantes.length+1;
+    nCodigo = integrantes.length+1;
     let integrante;
     let cNombres = document.getElementById("txtNombres").value;
     let cCorreo = document.getElementById("txtCorreo").value;
@@ -17,7 +17,7 @@ function GuardarIntegrante(){
     //El correo tienen que contener el caracter @
     //El telefono solo tienen que tener numero
     integrante={
-        Codigo: ncodigo,
+        Codigo: nCodigo,
         Nombres: cNombres,
         Correo: cCorreo,
         Telefono: cTelefono,
@@ -26,15 +26,16 @@ function GuardarIntegrante(){
 
     integrantes.push(integrante);
     MostarDatos();
-    
+
     document.getElementById("txtValidacion").innerHTML = "";
     document.getElementById("txtNombres").value ="";
     document.getElementById("txtCorreo").value="";
     document.getElementById("txtTelefono").value="";
-    ncodigo=0;
+    nCodigo=0;
 }
 
 function MostarDatos(){
+    let cNivel = "";
     let html = "";
     for (let index = 0; index < integrantes.length; index++) {
         let integrante = integrantes[index];
@@ -60,9 +61,25 @@ function MostarDatos(){
                 "<td>" + integrante.Correo + "</td>" +
                 "<td>" + integrante.Telefono + "</td>" +
                 "<td>" + cNivel + "</td>" +
-                "<td></td>" +
+                "<td>" + "<button class='btn btn-danger' onclick='Eliminar(" 
+                        + integrante.Codigo + ");'>Eliminar</button>"
+                +"</td>" +
             "</tr>";
     }
 
     document.getElementById("tbAgenda").innerHTML = html;
+}
+
+function Eliminar(Codigo){
+    let integrantesFiltrados = [];
+    for (let index = 0; index < integrantes.length; index++) {
+        let integrante = integrantes[index];
+
+        if(integrante.Codigo != Codigo){
+            integrantesFiltrados.push(integrante);
+        }      
+    }
+    
+    integrantes = integrantesFiltrados;
+    MostarDatos();
 }
