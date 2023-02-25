@@ -62,8 +62,9 @@ function MostarDatos(){
                 "<td>" + integrante.Telefono + "</td>" +
                 "<td>" + cNivel + "</td>" +
                 "<td>" + "<button class='btn btn-danger' onclick='Eliminar(" 
-                        + integrante.Codigo + ");'>Eliminar</button>"
-                +"</td>" +
+                        + integrante.Codigo + ");'>Eliminar</button>" +
+                        "<button class='btn btn-secondary'>Actualizar</button>"
+                +"</td>"  +
             "</tr>";
     }
 
