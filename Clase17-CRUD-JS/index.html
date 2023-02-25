@@ -22,6 +22,13 @@
                 <input type="email" id="txtCorreo" class="form-control" placeholder="Ingrese el correo">
                 <h3 class="text-primary">Numero Telefonico:</h3>
                 <input type="tel" id="txtTelefono" class="form-control" placeholder="Ingrese el numero telefonico">
+                <h3 class="text-primary">Nivel:</h3>
+                <select name="" id="ddNivel" class="form-control">
+                    <option value="1">Basico</option>
+                    <option value="2">Intermedio</option>
+                    <option value="3">Avanzado</option>
+                </select>
+                <h1 class="text-center text-danger" id="txtValidacion"></h1>
                 <hr>
                 <div class="text-center">
                     <button class="btn btn-success" onclick="GuardarIntegrante();">Guardar</button>
@@ -41,53 +48,16 @@
                         <th scope="col">Nombres</th>
                         <th scope="col">Email</th>
                         <th scope="col">Telefono</th>
+                        <th scope="col">Nivel</th>
                         <th scope="col">Acciones</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mario Daniel Quispe Ancasi</td>
-                        <td>mario.daniel1804@gmail.com</td>
-                        <td>939323866</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Mario Daniel Quispe Ancasi</td>
-                        <td>mario.daniel1804@gmail.com</td>
-                        <td>939323866</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Mario Daniel Quispe Ancasi</td>
-                        <td>mario.daniel1804@gmail.com</td>
-                        <td>939323866</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td>Mario Daniel Quispe Ancasi</td>
-                        <td>mario.daniel1804@gmail.com</td>
-                        <td>939323866</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <<th scope="row">5</th>
-                        <td>Mario Daniel Quispe Ancasi</td>
-                        <td>mario.daniel1804@gmail.com</td>
-                        <td>939323866</td>
-                        <td></td>
-                    </tr>
+                <tbody id="tbAgenda">
                 </tbody>
             </table>
         </div>
         <div class="col-md-2"></div>
     </div>
-
-        
-    
 </body>
 </html>
 
