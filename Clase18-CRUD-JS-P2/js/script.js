@@ -1,59 +1,49 @@
 var integrantes = [];
 var nCodigo = 0;
+
 function GuardarIntegrante(){
-    nCodigo = integrantes.length+1;
+    document.getElementById("txtValidacion").innerHTML = "";
+    if (nCodigo == 0) {
+        nCodigo = integrantes.length+1;
+    }
+    else{
+        Eliminar(nCodigo, false);
+    }
+
     let integrante;
     let cNombres = document.getElementById("txtNombres").value;
+    let cCorreo = document.getElementById("txtCorreo").value;
+    let cTelefono = document.getElementById("txtTelefono").value;
     let nNivel = document.getElementById("ddNivel").value;
     let cNivel ="";
 
-    //variables para validar el correo
-    let cCorreo = document.getElementById("txtCorreo").value;
-    let cCorreoDesglosado = [];
-    let lArroba = true;
-    cCorreoDesglosado = cCorreo.split("");
-    let cMensajeCorreo = "";
-
-    //Variables para la validacion del telefono
-    let cTelefono = document.getElementById("txtTelefono").value;
-    let cTelefonoDesglosado = [];
-    cTelefonoDesglosado = cTelefono.split("");
-    let cMensajeTelefono = "";
-    let lNumero = false;
-
+////////////////////////////////////////////////////////////////////
     //El nombre como  minimo debe tener 6 caracteres
     if(cNombres.length <=6){
         document.getElementById("txtValidacion").innerHTML = "Los datos ingresasdos 'Nombre Completo' son incorrectos";
         return;
     }
+///////////////////////////////////////////////////////////////////
+    //Validacion Nivel
+    if((parseInt(nNivel)) == 0){
+        document.getElementById("txtValidacion").innerHTML = "Seleccione un nivel";
+        return;
+    }
+/////////////////////////////////////////////////////////////////////
     //El correo tienen que contener el caracter @
-    for (let index = 0; index < cCorreoDesglosado.length; index++) {
-        if (cCorreoDesglosado[index]!="@") {
-            lArroba = false;
-        }
+    let validarCorreo = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    if (!(validarCorreo.test(cCorreo))) {
+        document.getElementById("txtValidacion").innerHTML = "Ingrese un correo valido";
+        return;
     }
-
-    if (lArroba = false) {
-        cMensajeCorreo = "El correo no posee el caracter '@'";
-        document.getElementById("txtValidacion").innerHTML = cMensajeCorreo;   
-    }
-
+///////////////////////////////////////////////////////////////////////
     //El telefono solo tienen que tener numero
-    for (let index = 0; index < cTelefonoDesglosado.length; index++) {
-        if(!(isNaN(cTelefonoDesglosado[index]))){
-            lNumero = true;
-        }
-        else{
-            lNumero = false;
-        }
+    let valorInt = parseInt(cTelefono);
+    if (!Number.isInteger(valorInt)) {
+        document.getElementById("txtValidacion").innerHTML = "Ingrese un numero valido";
+        return;
     }
-    if (!lNumero) {
-        //cMensajeTelefono = "El telefono solo debe contener numeros";
-        //document.getElementById("txtValidacion").innerHTML = cMensajeTelefono;
-        document.getElementById("txtValidacion").innerHTML = "El telefono solo debe contener numeros";
-    }
-
-
+////////////////////////////////////////////////////////////////////
 
     integrante={
         Codigo: nCodigo,
@@ -78,8 +68,9 @@ function GuardarIntegrante(){
 function MostarDatos(){
     let cNivel = "";
     let html = "";
-    for (let index = 0; index < integrantes.length; index++) {
-        let integrante = integrantes[index];
+    let integrantesOrdenados = integrantes.sort();
+    for (let index = 0; index < integrantesOrdenados.length; index++) {
+        let integrante = integrantesOrdenados[index];
 
         switch (integrante.Nivel) {
             case "1":
@@ -104,7 +95,8 @@ function MostarDatos(){
                 "<td>" + cNivel + "</td>" +
                 "<td>" + "<button class='btn btn-danger' onclick='Eliminar(" 
                         + integrante.Codigo + ");'>Eliminar</button>" +
-                        "<button class='btn btn-secondary'>Actualizar</button>"
+                         "<button class='btn btn-secondary' onclick='Buscar(" 
+                        + integrante.Codigo + ");'>Actualizar</button>"
                 +"</td>"  +
             "</tr>";
     }
@@ -112,7 +104,7 @@ function MostarDatos(){
     document.getElementById("tbAgenda").innerHTML = html;
 }
 
-function Eliminar(Codigo){
+function Eliminar(Codigo, MostrarDatos = true){
     let integrantesFiltrados = [];
     for (let index = 0; index < integrantes.length; index++) {
         let integrante = integrantes[index];
@@ -123,5 +115,24 @@ function Eliminar(Codigo){
     }
     
     integrantes = integrantesFiltrados;
+
+    if (MostrarDatos) {
+        MostarDatos();
+    }
     MostarDatos();
+}
+
+function Buscar(Codigo) {
+    let integranteEncontrado;
+    for (let index = 0; index < integrantes.length; index++) {        
+        let integrante = integrantes[index];
+        if (integrante.Codigo == Codigo) {
+            integranteEncontrado = integrante;
+        }
+    }
+    document.getElementById("txtNombres").value =integranteEncontrado.Nombres;
+    document.getElementById("txtCorreo").value= integranteEncontrado.Correo;
+    document.getElementById("txtTelefono").value= integranteEncontrado.Telefono;
+    document.getElementById("ddNivel").value = integranteEncontrado.Nivel;
+    nCodigo = Codigo;
 }
