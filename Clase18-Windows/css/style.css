@@ -1,0 +1,7 @@
+.objeto{
+    height: 50px;
+    width: 50px;
+    border-radius: 30%;
+    background-color: aqua;
+    position: relative;
+}
