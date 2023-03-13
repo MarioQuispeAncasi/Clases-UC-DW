@@ -39,9 +39,10 @@ delete from empleado WHERE idempleado = 7;
 
 CALL CrearEmpleado();
 
-select * from empleado;
 
-CALL IngresarPlanilla();
 
 
 DELETE from empleado where idempleado > 0;
+CALL IngresarPlanilla();
+select * from empleado;
+
