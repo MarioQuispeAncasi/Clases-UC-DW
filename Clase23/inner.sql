@@ -45,3 +45,7 @@ select * from hospital.roles;
 call problema7();
 call problema8();
 call problema9();
+call problema10();
+
+select * from escuela.personas where cnrodocumento = '74766973';
+select * from hospital.personas where cnrodocumento = '74766973';
