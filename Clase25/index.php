@@ -56,9 +56,113 @@
 
     <h2 class="text-center text-warning bg-secondary"> <?php var_dump($frutas) ?></h2>
 
-    
+    <h1 class="bg-dark text-light text-center">Clases y Objetos</h1>
 
+    <?php
+        class Perro{
+            public $color;
+            public $raza;
+            public $peso;
+            public function __construct($color, $raza, $peso){
+                $this->color = $color;
+                $this->raza = $raza;
+                $this->peso = $peso;
+            }
+
+            public function Ladrar(){
+                return "Guau Guau....";
+            }
+
+        }
+        $Figo = new Perro("Negro/Marron","Pastor","45kg");
+    ?>
+
+    <h2 class="text-center text-warning bg-secondary">Figo realiza un ladrido <?php echo $Figo->Ladrar()?></h2>
+    <h2 class="text-center text-warning bg-secondary">Figo es de color <?php echo $Figo->color?></h2>
+    <h2 class="text-center text-warning bg-secondary">Figo es de raza <?php echo $Figo->raza?></h2>
+    <h2 class="text-center text-warning bg-secondary">Figo pesa <?php echo $Figo->peso?></h2>
+
+    <h1 class="bg-dark text-light text-center">Tipos de Datos</h1>
+
+    <?php
+        function ValidarEdad($edad){
+            if($edad >= 18){
+                if ($edad>=60) {
+                    return "La persona es mayor de edad y de alto riesgo";
+                }
+                else{
+                    return "La persona es mayor de edad";
+                }
+            }
+
+            else{
+                return "La persona es menor de edad";
+            }
+        }
+        
+    ?>
+    <h2 class="text-center text-warning bg-secondary">Sentencia If</h2>
+    <h2 class="text-center text-warning bg-secondary"><?php echo ValidarEdad(20); ?></h2>
+    <h2 class="text-center text-warning bg-secondary"><?php echo ValidarEdad(15); ?></h2>
+    <h2 class="text-center text-warning bg-secondary"><?php echo ValidarEdad(66); ?></h2>
+
+    <h1 class="bg-dark text-light text-center">Sentencia SWITCH</h1>
     
+    <?php
+        function ValidarEstado($codigoEstado){
+            switch ($codigoEstado) {
+                case 1:
+                    return "El estado del paciente es regular";
+                    break;
+                case 2:
+                    return "El estado del paciente es grave";
+                    break;
+                case 3:
+                    return "El estado del paciente es critica";
+                    break;
+                
+                default:
+                    return "El estado del paciente es sana";
+                    break;
+            }
+        }
+
+    ?>    
+    <h2 class="text-center text-warning bg-primary"><?php echo ValidarEstado(1); ?></h2>
+    <h2 class="text-center text-warning bg-primary"><?php echo ValidarEstado(2); ?></h2>
+    <h2 class="text-center text-warning bg-primary"><?php echo ValidarEstado(3); ?></h2>
+    <h2 class="text-center text-warning bg-primary"><?php echo ValidarEstado(4); ?></h2>
+
+    <h1 class="bg-dark text-light text-center">Bucles</h1>
+    <h2 class="text-center text-secondary bg-warning">Bucle FOR</h2>
+    <?php
+        for ($i=0; $i < 10 ; $i++) { 
+    ?>
+        <h2 class="text-center text-secondary bg-warning"><?php echo "Soy el numero " . $i ?></h2>        
     
+    <?php
+        }
+    ?>
+
+    <h2 class="text-center text-secondary bg-warning">Bucle While</h2>
+    <?php
+        $a = 10;
+        while ($a >= 1) { 
+    ?>
+        <h2 class="text-center text-primary bg-dark"><?php echo "Soy el numero " . $a ?></h2>        
+    <?php
+            $a = $a - 1;
+        }
+    ?>
+
+    <h1 class = "bg-dark text-light text-center">
+        <?php
+            $profesiones = array("Juan" => "Medico", "Jose" => "Carpintero", "Carlos" =>"Ingeniero", "Mariana" => "Abogada");
+            var_dump($profesiones["Juan"]);
+            var_dump($profesiones["Jose"]);
+            var_dump($profesiones["Carlos"]);
+            var_dump($profesiones["Mariana"]);
+        ?>
+    </h1>  
 </body>
 </html>
