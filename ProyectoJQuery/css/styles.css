@@ -1,0 +1,684 @@
+*{
+    font-family: 'Comic Neue', cursive;
+}
+
+:root{
+    --bgPrimero: #00a7ad;
+    --bgSegundo: #ffce4a;
+    --bgTercero: #0c8141;
+    --bgCuarto: #f8bbae;
+    --bgQuinto: #d0ffd6;
+    --bgSexto: #a8a1e9;
+    --bgSeptimo: #00d5dc;
+    --bgOctavo: #70a87f;
+    --bgNoveno: rgb(222, 109, 109);
+    --txtPrimary:#083dc5;
+    --txtSecond: #931b6b;
+}
+
+h1{
+    text-transform: uppercase; 
+}
+
+
+
+p{
+    font-size: 15px;
+    color: var(--txtPrimary);
+    text-align: justify;
+}
+
+#Nosotros{
+    background-color: var(--bgCuarto);
+}
+
+#Contactenos{
+    background-color: var(--bgPrimero);
+}
+
+.t2{
+    color: var(--txtPrimary);
+    text-align: center;
+}
+
+.WW{
+    color: white;
+    text-decoration: underline;
+}
+
+.HT{
+    color: white;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.titulo{
+    text-decoration: underline;
+    font-weight: 900;
+    text-transform: uppercase; 
+    color: var(--txtPrimary);
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.navPrincipal{
+    border-bottom: solid black 3px;
+    padding: 10px;
+    background-color: var(--bgNoveno);
+}
+
+.nav-link{
+    color: white;
+    padding: 30px;
+}
+
+.titulo:hover{
+    color: var(--bgSexto);
+    cursor: pointer;
+}
+
+.img-fluid{
+    max-width: 50%;
+    padding: 10px;
+}
+
+.img-fluidPri{
+    max-width: 100%;
+}
+
+.secPrincipal{
+    max-height: 500px;
+}
+
+.imgCar{
+    height: 513px;
+    width: 100%;
+    opacity: 0.88;
+    background-repeat: round;
+}
+
+.secSec1{
+    background-color: rgb(226, 88, 88);
+}
+
+.secSec2{
+    background-color: rgb(82, 39, 39);
+}
+
+.cardServicios{
+    margin: 30px;
+}
+
+.imgCon{
+    padding: 10px;
+}
+.TituloServicio{
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.DescripcionServicio{
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+
+.PrecioServicio{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.img-fluidPriH{
+    max-height: 300px;
+}
+
+.segundoMensajeCar{
+    color: red;
+}
+
+.tercerMensajeCar{
+    color: rgb(131, 60, 131);
+}
+
+.bgImgLogo{
+    border: 5px solid var(--bgTercero);
+    background-color: var(--bgQuinto);
+}
+
+.bgTitulo{
+    border: 5px solid var(--bgSegundo);
+    background-color: var(--bgPrimero);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bgNav{
+    border: 5px solid var(--bgSegundo);
+    background-color: var(--bgPrimero);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.nav-link:hover{
+    color: var(--bgSegundo);
+    cursor: pointer;
+}
+.footer{
+    margin-top: 12px;
+}
+
+.mt20{
+    margin-top: 20px;
+}
+
+.cBlue{
+    color: var(--txtPrimary);
+}
+
+.fontsBalsamiq{
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.secHistoria{
+    padding: 10px;
+}
+
+.imgGall{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formatoVideo{
+    width: 400px;
+    height: 300px;
+    border: 5px solid var(--bgQuinto);
+}
+
+.btnCentrado{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+
+.secHistoria{
+    padding: 10px;
+}
+
+.secCliente{
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.secHistoriaCliente{
+    padding: 50px;
+    background-color: var(--bgSexto);
+}
+
+.txtBlanco{
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+
+.txtBlanco2{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.formatoImagen{
+    width: 240px;
+    height: 140px;
+    border: 2px solid white;
+}
+
+.card-text{
+    color: white;
+}
+
+.tRedes{
+    color: #b34855;
+    text-align: left;
+    margin: 0px 40px 40px 40px; 
+}
+
+.bor5{
+    border-bottom: 2px solid white;
+}
+
+.tRedesF{
+    text-align: center;
+    color: blue;
+    margin: 0px;
+    margin-top: 20px;
+    font-weight: bolder;
+}
+
+.pad40{
+    padding: 40px;
+}
+
+.desFacebook{
+    background-color: rgb(161, 190, 248);
+    min-height: 328px;
+}
+
+.pad20{
+    padding: 20px;
+}
+
+.txtblanco3{
+    color: white;
+}
+
+
+.bgImgF{
+    background-image: url('../img/arequipa.png');
+    background-repeat:round;
+    max-height: 150px;
+    max-width: 351px;
+    padding: 20px;
+    text-align: center;
+    border: 5px solid var(--bgCuarto); 
+    margin: 32px;
+}
+
+.bor5{
+    border-bottom: 2px solid white;
+}
+
+.tRedesY{
+    text-align: center;
+    color: red;
+    margin: 0px;
+    margin-top: 20px;
+    font-weight: bolder;
+}
+
+.bgImgY{
+    background-image: url('../img/chan-chan.png');
+    background-repeat:round;
+    max-height: 150px;
+    max-width: 351px;
+    padding: 20px;
+    border: 5px solid var(--bgPrimero);
+    text-align: center;
+    margin: 32px;
+}
+
+.desYoutube{
+    background-color: rgba(0, 0, 0, 0.615);
+    min-height: 328px;
+}
+
+.desWhatsapp{
+    background-color: var(--bgQuinto);
+    min-height: 328px;
+}
+
+.tRedesW{
+    text-align: center;
+    color: #008000;
+    margin: 0px;
+    margin-top: 20px;
+    font-weight: bolder;
+}
+
+.bgImgW{
+    background-image: url('../img/Kuelap.png');
+    background-repeat:round;
+    max-height: 150px;
+    max-width: 351px;
+    padding: 20px;
+    text-align: center;
+    border: 5px solid var(--bgSeptimo); 
+    margin: 32px;
+}
+
+.desInstagram{
+    background-color: #c24e9b;
+    min-height: 328px;
+}
+
+.tRedesI{
+    text-align: center;
+    color: #ff9300;
+    margin: 0px;
+    margin-top: 20px;
+    font-weight: bolder;
+}
+
+.bgImgI{
+    background-image: url('../img/bgServicios.png');
+    background-repeat:round;
+    max-height: 150px;
+    max-width: 351px;
+    padding: 20px;
+    text-align: center;
+    border: 5px solid var(--bgQuinto); 
+    margin: 32px;
+}
+
+.tRedesTT{
+    text-align: center;
+    color: var(--txtSecond);
+    margin: 0px;
+    margin-top: 20px;
+    font-weight: bolder;
+}
+
+.bgImgTT{
+    background-image: url('../img/callejosHuaylas.png');
+    background-repeat:round;
+    max-height: 150px;
+    max-width: 351px;
+    padding: 20px;
+    text-align: center;
+    border: 5px solid black; 
+    margin: 32px;
+}
+
+.desCU{
+    background-color: var(--bgCuarto);
+    min-height: 354px;
+}
+
+.tRedesCU{
+    text-align: center;
+    color: var(--txtSecond);
+    margin: 0px;
+    margin-top: 20px;
+    font-weight: bolder;
+}
+
+.bgImgCU{
+    background-image: url('../img/MacchuPicchu.png');
+    background-repeat:round;
+    max-height: 150px;
+    max-width: 351px;
+    padding: 20px;
+    text-align: center;
+    border: 5px solid var(--bgPrimero); 
+    margin: 32px;
+}
+
+.pad20{
+    padding: 20px;
+}
+
+.txtblanco4{
+    color: white;
+    text-align: left;
+    margin: 0px;
+    padding-top: 0px;
+    font-size: 18px;
+    padding-left: 0px;
+}
+
+.txtblanco5{
+    color: white;
+    text-align: center;
+}
+
+[class*="col-"]{
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    /*border: 1px solid black;*/
+}
+
+
+/*
+Formulario*/
+.bgform{
+    background-color: var(--bgSexto);
+    border: 5px solid white;
+}
+.formulario{
+    display: block;
+    text-align: justify;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.bgMap{
+    background-color: #e77d8e;
+    border: 5px solid white;
+    height: 564px;
+    min-height: 470px;
+}
+
+.h2Map{
+    text-align: left;
+    font-weight: bold;
+    color: var(--bgCuarto);
+}
+
+.formatoMapa{
+    max-width: 465px;
+    max-height: 307px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+/*pantalla pequena*/
+@media only screen and (min-width: 0px) {
+    .col-pq-12{
+        width: 100%;
+    }
+    
+    .col-pq-6{
+        width: 50%;
+    }
+    
+    .col-pq-3{
+        width: 25%;
+    }
+    
+    .col-pq-4{
+        width: 33.33%;
+    }
+    
+    .col-pq-8{
+        width: 66.66%;
+    }
+
+    .col-pq-2{
+        width: 16.66%;
+    }
+    .pqTransImg{
+        transition: width 3s, height 3s;
+    }
+    
+    .pqTransImg:hover{
+        width: 210px;
+        height: 158px;
+        position: sticky;
+        right: 40px;
+    }
+
+
+}
+
+/*pantalla mediana*/
+@media only screen and (min-width: 590px) {
+    .col-md-12{
+        width: 100%;
+    }
+    
+    .col-md-6{
+        width: 50%;
+    }
+    
+    .col-md-3{
+        width: 25%;
+    }
+    
+    .col-md-4{
+        width: 33.33%;
+    }
+    
+    .col-md-8{
+        width: 66.66%;
+    }
+
+    .col-md-5{
+        width: 41.66%;
+    }
+
+    .col-md-7{
+        width: 58.33;
+    }
+
+    /*.formatoImagen{
+        height: 100px;
+        width: 150px;
+    }*/
+
+    .linkNav{
+        font-size: 25px;
+    }
+
+    .header{
+        height: 200px;
+    }
+
+    .hNav{
+        height: 200px;
+    }
+    /*.elementoFijo {
+
+        top: 0;
+        right: 0;
+    }*/
+
+    .pmTransImg{
+        transition: width 3s, height 3s;
+    }
+    
+    .pmTransImg:hover{ 
+        width: 198.4px;
+        height: 140px;
+        position: relative;
+        right: 25px;
+    }
+    
+}
+
+
+@media only screen and (min-width: 900px){
+    /*[class*="col-"]{
+        /*float: left;
+        border: 1px solid black;
+        width: 100%;   
+    }*/
+
+    .col-12{
+        width: 100%;
+    }
+    
+    .col-6{
+        width: 50%;
+    }
+    
+    .col-3{
+        width: 25%;
+    }
+    
+    .col-4{
+        width: 33.33%;
+    }
+    
+    .col-8{
+        width: 66.66%;
+    }
+
+    .col-5{
+        width: 41.66%;
+    }
+
+    .col-7{
+        width: 58.33;
+    }
+
+    img{
+        height: 100px;
+        width: 360px;
+    }
+
+    .header{
+        height: 200px;
+    }
+
+    .hNav{
+        height: 200px;
+        color: black;
+    }
+
+    /*.elementoFijo {
+        position: fixed;
+        top: 0;
+        right: 0;
+    }*/
+
+    .pgTransImg{
+        position: static;
+        transition: width 3s, height 3s;
+    }
+    
+    .pgTransImg:hover{ 
+        width: 198.4px;
+        height: 140px;
+        position: relative;
+        right: 30px;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .imgLogo{
+        width: 200px;
+         /*padding-right: 100px;*/
+ 
+         display: flex;
+         align-items: center;
+         justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width:1265px) {
+    .formatoImagen{
+        width: 150px;
+        height: 100px;
+        
+    }
+}
+
+@media only screen and (min-width:1265px) {
+    .pgTransImg{
+        position: inherit;
+        transition: width 3s, height 3s;
+    }
+    
+    .pgTransImg:hover{ 
+        width: 290px;
+        height: 200px;
+        position: sticky;
+    }
+}
+
